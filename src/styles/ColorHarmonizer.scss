@@ -36,48 +36,23 @@ $transition-speed: 0.3s;
   }
 
   .random-shape {
-    width: 400px;
-    height: 400px;
+    width: min(540px, 100%);
     margin: 0 auto;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.72);
     box-shadow: 0 24px 50px rgba(0, 0, 0, 0.12);
     transform: perspective(900px) rotateX(4deg) rotateY(6deg);
   }
 
   .random-shape .face {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    clip-path: polygon(0 0, 100% 0, 50% 50%);
-  }
-
-  .random-shape .face:nth-child(1) {
-    top: 0;
-    left: 0;
-  }
-
-  .random-shape .face:nth-child(2) {
-    top: 0;
-    right: 0;
-    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
-  }
-
-  .random-shape .face:nth-child(3) {
-    bottom: 0;
-    right: 0;
-    clip-path: polygon(100% 100%, 0 100%, 50% 50%);
-  }
-
-  .random-shape .face:nth-child(4) {
-    bottom: 0;
-    left: 0;
-    clip-path: polygon(0 100%, 0 0, 50% 50%);
-  }
-
-  .random-shape .face {
-    border-radius: 999px;
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
   }
 
   .face {

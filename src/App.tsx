@@ -1,6 +1,6 @@
 // Importamos los componentes que se mostrarán en la aplicación.
 import ColorHarmonizer from "./components/ColorHarmonizer.tsx";
-// import RandomColorObject from "./components/RandomColorObject.tsx";
+import RandomColorObject from "./components/RandomColorObject.tsx";
 import ContrastChecker from "./components/ContrastChecker.tsx";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <ColorHarmonizer />
 
       {/* Objeto secundario que cambia de color aleatoriamente */}
-      {/* <RandomColorObject /> */}
+      <RandomColorObject />
 
       {/* Herramienta de contraste mantenida como referencia */}
       <ContrastChecker />
